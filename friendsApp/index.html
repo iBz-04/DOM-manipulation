@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends App</title>
 
-    <!-- Link to our css file -->
-    <link rel="stylesheet" href="./main.css">
+    <!-- Link to our dark-themed css file -->
+    <link rel="stylesheet" href="./main-dark.css">
 </head>
 <body>
 
@@ -48,19 +48,16 @@
                     <span class="welcomeNote">iBz asks you to enter your name!</span>
                     <form action="">
                         <div class="welcomeField">
-                            <label for="visitorName">Your Name</label>
-                            <input type="text" id="visitorName" placeholder="Enter Your Name..." required>
-                            <button type="submit" id="visitorNameBtn" >Done!</button>
+                            <label for="name">Name</label>
+                            <input type="text" id="welcomeInput" placeholder="Enter your name..." required>
                         </div>
+                        <button type="submit" id="welcomeBtn">Done!</button>
                     </form>
                 </div>
             </div>
         </div>
-        <small>Friends App</small>
     </div>
-    
 
-    <!-- Link to JS file -->
     <script src="./main.js"></script>
 </body>
 </html>
