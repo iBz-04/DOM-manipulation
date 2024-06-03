@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends App</title>
+
+    <!-- Link to our css file -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="title" id="formTitle">Add Friends</h1>
+
+            <span class="message">
+                Please complete the form!
+            </span>
+
+            <form action="">
+                <!--Name  -->
+                <div class="nameDiv">
+                    <label for="nameInput">Friend's Name</label>
+                    <input type="text" id="nameInput" placeholder="Enter Name..." required>
+                </div>
+
+                <!-- Phone number -->
+                <div class="numberDiv">
+                    <label for="numberInput">Friend's Number</label>
+                    <input type="number" id="numberInput" placeholder="Enter Phone Number..." required>
+                </div>
+                <button type="submit" id="addFriendBtn" >Add Friend</button>
+            </form>
+
+            <!-- Addded friends list -->
+            <div class="friendsList">
+                <span class="friendsListTitle">
+                    Empty Friends List
+                </span>
+            </div>
+
+            <!-- Welcome Page -->
+            <div class="welcomePage">
+                <div class="pageInfo">
+                    <h2>Hi, welcome!</h2>
+                    <span class="welcomeNote">iBz asks you to enter your name!</span>
+                    <form action="">
+                        <div class="welcomeField">
+                            <label for="visitorName">Your Name</label>
+                            <input type="text" id="visitorName" placeholder="Enter Your Name..." required>
+                            <button type="submit" id="visitorNameBtn" >Done!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <small>Friends App</small>
+    </div>
+    
+
+    <!-- Link to JS file -->
+    <script src="./main.js"></script>
+</body>
+</html>

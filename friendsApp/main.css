@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: all 0.8s ease;
+}
+
+body {
+  background: rgb(237, 242, 245);
+  color: rgb(52, 22, 109);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container small {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-size: italic;
+}
+.container .content {
+  padding: 2rem 0.5rem;
+  width: 90%;
+  background: whitesmoke;
+  border-radius: 10%;
+}
+@media screen and (min-width: 660px) {
+  .container .content {
+    width: 70%;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container .content {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .content {
+    width: 40%;
+  }
+}
+.container .content .title {
+  padding: 10px 0;
+  font-size: 25px;
+  text-align: center;
+}
+@media screen and (min-width: 660px) {
+  .container .content .title {
+    font-size: 35px;
+  }
+}
+.container .content .message {
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  display: none;
+  text-align: center;
+}
+.container .content .message.active {
+  background: red;
+  border-radius: 5px;
+  margin: 10px;
+  display: block;
+  color: whitesmoke;
+}
+.container .content .nameDiv,
+.container .content .numberDiv {
+  margin: 2rem 0;
+  text-align: center;
+}
+.container .content label {
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .container .content label {
+    margin-bottom: 0px;
+  }
+}
+.container .content input {
+  padding: 15px;
+  background: rgb(238, 237, 237);
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .container .content input {
+    width: 250px;
+  }
+}
+.container .content button {
+  display: block;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgb(22, 28, 109);
+  color: whitesmoke;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container .content button:hover {
+  background: rgb(12, 14, 44);
+}
+@media screen and (min-width: 768px) {
+  .container .content button {
+    width: 70%;
+  }
+}
+.container .content .friendsList {
+  margin-top: 1rem;
+  padding: 10px;
+}
+.container .content .friendsList .friendsListTitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.container .content .friendsList .friend {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 15px 20px 15px 15px;
+  background: rgb(238, 237, 237);
+  border-radius: 5px;
+}
+.container .content .friendsList .friend :hover {
+  background: rgb(226, 226, 226);
+}
+.container .content .friendsList .friend .deleteFriend {
+  position: absolute;
+  background: #c50606;
+  padding: 5px 10px;
+  color: whitesmoke;
+  right: -15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .content .friendsList .friend .deleteFriend:hover {
+  background: #a80505;
+}
+.container .welcomePage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 14, 44, 0.698);
+  opacity: 0;
+  transition: opacity 0.5rem ease;
+}
+.container .welcomePage .pageInfo {
+  background: whitesmoke;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+}
+@media screen and (min-width: 660px) {
+  .container .welcomePage .pageInfo {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+.container .welcomePage .pageInfo h2 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.container .welcomePage .pageInfo .welcomeNote {
+  text-align: center;
+  display: block;
+  padding-bottom: 2rem;
+  color: rgba(12, 14, 44, 0.589);
+}
+.container .welcomePage .pageInfo .welcomeField input {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .container .welcomePage .pageInfo button {
+    width: 100%;
+  }
+}
+
+.fall {
+  transform: translateY(80rem) rotate(20deg);
+  opacity: 0.5;
+}
+/*# sourceMappingURL=main.css.map */
