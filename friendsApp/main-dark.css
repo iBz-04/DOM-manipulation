@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    transition: all 0.8s ease;
+}
+
+body {
+    background: rgb(32, 32, 32);
+    color: rgb(220, 220, 220);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+    .container small {
+        margin-top: 2rem;
+        font-size: 15px;
+        font-size: italic;
+        color: rgb(150, 150, 150);
+    }
+
+    .container .content {
+        padding: 2rem 0.5rem;
+        width: 90%;
+        background: rgb(45, 45, 45);
+        border-radius: 10%;
+    }
+
+@media screen and (min-width: 660px) {
+    .container .content {
+        width: 70%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .container .content {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container .content {
+        width: 40%;
+    }
+}
+
+.container .content .title {
+    padding: 10px 0;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 660px) {
+    .container .content .title {
+        font-size: 35px;
+    }
+}
+
+.container .content .message {
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+    display: none;
+    text-align: center;
+}
+
+    .container .content .message.active {
+        background: rgb(180, 0, 0);
+        border-radius: 5px;
+        margin: 10px;
+        display: block;
+        color: rgb(220, 220, 220);
+    }
+
+.container .content .nameDiv,
+.container .content .numberDiv {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.container .content label {
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 768px) {
+    .container .content label {
+        margin-bottom: 0px;
+    }
+}
+
+.container .content input {
+    padding: 15px;
+    background: rgb(60, 60, 60);
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 3rem;
+    width: 100%;
+    color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 1200px) {
+    .container .content input {
+        width: 250px;
+    }
+}
+
+.container .content button {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgb(22, 28, 109);
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+    width: 100%;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    .container .content button:hover {
+        background: rgb(12, 14, 44);
+    }
+
+@media screen and (min-width: 768px) {
+    .container .content button {
+        width: 70%;
+    }
+}
+
+.container .content .friendsList {
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+    .container .content .friendsList .friendsListTitle {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0;
+        color: rgb(220, 220, 220);
+    }
+
+    .container .content .friendsList .friend {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 15px 20px 15px 15px;
+        background: rgb(60, 60, 60);
+        border-radius: 5px;
+        color: rgb(220, 220, 220);
+    }
+
+        .container .content .friendsList .friend:hover {
+            background: rgb(80, 80, 80);
+        }
+
+        .container .content .friendsList .friend .deleteFriend {
+            position: absolute;
+            background: rgb(180, 0, 0);
+            padding: 5px 10px;
+            color: rgb(220, 220, 220);
+            right: -15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .container .content .friendsList .friend .deleteFriend:hover {
+                background: rgb(150, 0, 0);
+            }
+
+.container .welcomePage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12, 14, 44, 0.698);
+    opacity: 0;
+    transition: opacity 0.5rem ease;
+}
+
+    .container .welcomePage .pageInfo {
+        background: rgb(45, 45, 45);
+        padding: 2rem;
+        border-radius: 10px;
+        width: 90%;
+        color: rgb(220, 220, 220);
+    }
+
+@media screen and (min-width: 660px) {
+    .container .welcomePage .pageInfo {
+        width: -moz-max-content;
+        width: max-content;
+    }
+}
+
+.container .welcomePage .pageInfo h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: rgb(220, 220, 220);
+}
+
+.container .welcomePage .pageInfo .welcomeNote {
+    text-align: center;
+    display: block;
+    padding-bottom: 2rem;
+    color: rgba(220, 220, 220, 0.7);
+}
+
+.container .welcomePage .pageInfo .welcomeField input {
+    margin-bottom: 1rem;
+    background: rgb(60, 60, 60);
+    color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 768px) {
+    .container .welcomePage .pageInfo button {
+        width: 100%;
+    }
+}
+
+.fall {
+    transform: translateY(80rem) rotate(20deg);
+    opacity: 0.5;
+}
